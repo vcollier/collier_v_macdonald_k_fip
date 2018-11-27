@@ -1,0 +1,536 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Remove this rule, this is only for demo purposes to make the boxes black with white text
+The line height on the <p> tag gives each box a height value*/
+
+p
+{
+	color: #fff;
+	line-height: 100px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+/*basic reset*/
+/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+
+div,p,body,header,footer,section,article,nav 
+{ 
+	margin: 0; 
+	padding: 0; 
+}	
+
+img 
+{ 
+	border: none; /*Remove border if image is a link*/
+	margin: 0; 
+	padding: 0; 
+}
+
+/*html selectors*/
+
+body 
+{
+	font-family: "Courier New", Courier, serif;
+	font-size: 12px;
+	color: #333;
+	background-image: url(../images/pattern.png);
+}
+
+#promoBack
+{
+	background-image: url(../images/wood.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#siteContainer
+{
+	 background-color: #fff
+}
+
+/*a:link is for not visited(standard unclicked link), 
+a:visited is for visited, and just a applies to both.*/
+/*a will also style anchor links*/
+
+a:link, a:visited 
+{ 
+ 	text-decoration:none; 	
+}
+
+a:hover, a:active 
+{ 
+	text-decoration:none; 
+}
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden
+{
+	display: none;
+}
+
+/*section is block level and no width specidied therefore stretches full screen*/
+#topBar
+{
+	background-color: #1d4036;
+	height: 46.4px;
+}
+
+/*Site Container*/
+/*This is essentially a box that we place the whole site in.  
+We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 20px (960px) so it fits on 1024x768 screens.*/
+
+#siteContainer 
+{
+	margin: 0 auto;
+	width: 920px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/*This is a flex container*/
+#mainHeader
+{
+	margin-top: 0px;
+	padding-bottom: 40px;
+	padding-top: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+	border-bottom: solid 9.4px #1d4036;
+}
+
+/*This is a flex item*/
+#logo
+{
+	display: flex;
+	width: 150px;
+	height: 125px;
+}
+
+/*This is also a flex item*/
+/*We use margin left auto to send it all the way to the right*/
+#mainNav 
+{
+	margin-left: auto;
+	width: 560px;
+	padding-right: 60px;
+	padding-top: 60px;
+}
+
+#mainNav ul li 
+ {
+  font-size: 24px;
+  display: inline;
+  cursor: pointer;
+  margin-left: 15px;
+  padding-left: 15px;
+}
+
+#mainNav ul li a
+{
+  color: #619787;
+}
+
+#mainNav ul li a:hover {
+  color: #1d4036;
+}
+
+
+#promo 
+{
+	border-bottom: solid 9.4px #1d4036 ;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+  	padding-top: 20px;
+
+}
+
+
+/*Get rid of this, here just to give different height to promo*/
+
+#promo p
+{
+	background-color: #1d4036;
+}
+
+#promoImageBig h2 
+{
+	font-size: 65px;
+	text-align: center;
+	font-family: "Calling Heart";
+	color: #1d4036; 
+}
+
+#promoImageBig h3
+{
+	font-size: 45px;
+	text-align: center;
+	font-family: "Courier New";
+	color: #1d4036;
+}
+
+#promoText
+{
+	width: 600px;
+}
+
+#promoText p
+{
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	font-size: 16px;
+	padding-left: 30px;
+	padding-right: 30px;
+	line-height: normal;
+}
+
+#textTop
+{
+	padding-top: 60px;
+	padding-left: 10px;
+}
+
+#textBottom
+{
+	padding-top: 25px;
+	padding-bottom: 75px;
+	padding-left: 10px;
+}
+
+#promoImage
+{
+	margin-left: auto;
+	width: 280px;
+}
+
+#productInfo 
+{
+	color: #1d4036;
+	margin-top: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+}
+
+/*Get rid of this, here just to give different height to productInfo*/
+#productInfo p 
+{
+	line-height: normal;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.productDesc 
+{
+	width: 200px;
+	display: flex;
+	text-align: center;
+	font-size: 16px;
+	background-color: #1d4036;
+}
+
+.productDesc p
+{
+	margin-top: 100px;
+	margin-bottom: 100px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+#mainFooter 
+{
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+  	background-color: #425e56;
+}
+
+#footerNav 
+{
+	width: 500px;
+	height: 150px;
+}
+
+#footerNav ul li 
+ {
+  font-size: 24px;
+  display: inline;
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+#footerNav ul li a
+{
+  color: #f6f8f7;
+}
+
+#footerNav ul li a:hover {
+  color: #349378;
+}
+
+
+#footerNav ul
+{
+  padding: 0;
+  list-style-type: none;
+  width: 500px;
+  margin-left: 26px;
+  margin-top: 60px;
+}
+  
+
+#copyRight 
+{
+	margin-left: auto;
+	width: 335px;
+}
+
+#copyRight ul
+{
+	list-style-type: none;
+	padding-top: 25px;
+}
+
+#copyRight ul li
+{
+	font-size: 16px;
+	color: #fff;
+}
+
+#adress
+{
+	padding-bottom: 5px;
+}
+
+#phone
+{
+	padding-bottom: 15px;
+}
+
+/*Page 2 - Notice we are using one style sheet for all of the pages*/
+
+#contentCon {
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+/*Get rid of this, here just to give different height to promo*/
+#contentCon p 
+{
+	line-height: 630px;
+}
+
+
+#content1 
+{
+	width: 440px;
+	background-color: #1d4036;
+}
+
+#content2 
+{
+	margin-left: auto;
+	width: 440px;
+}
+
+#mainContact
+{
+  width: 940px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+#mainContact h2
+{
+  font-size: 30px;
+  color: #2073a8;
+  background-color: #ddeff7;
+  margin-bottom: 40px;
+  padding: 8px 0px 8px 0px;
+  width: 940px;
+}
+
+#contactArea {
+  width: 469px;
+  border-right: solid 1px #CCC;
+  margin-bottom: 30px;
+}
+
+
+#contactText {
+  font-size: 21px;
+  font-family: "Calling Heart";
+  margin-bottom: 30px;
+  width: 340px;
+}
+
+#contactForm
+{
+  margin-top: 30px;
+  padding-left: 60px;
+}
+
+#contactForm h3
+{
+	color: white;
+	font-family: "Calling Heart";
+	font-size: 22px;
+}
+
+#contactForm h4
+{
+	color: white;
+	font-family: "Calling Heart";
+	font-size: 22px;
+}
+
+#contactForm h5
+{
+	color: white;
+	font-family: "Calling Heart";
+	font-size: 22px;
+}
+
+fieldset {
+  border: none;
+  padding: 0px;
+}
+
+
+input, textarea  {
+  font-size: 11px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 300px;
+  height: 10px;
+  background-color: #efefef;
+  display: block;
+  border: 1px solid #999;
+  color: #333;
+
+}
+
+#comments
+{
+  width: 300px;
+  height: 140px;
+}
+
+
+
+#submit
+{
+  display: block;
+  width: 75px;
+  height: 30px;
+  text-align: center;
+  margin-top: 30px;
+  color: #1d4036;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: white;
+  font-size: 14px;
+  font-family: "Calling Heart";
+  border: 1px solid #003471;
+}
+
+/*Page 3*/
+
+#productImages 
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+}
+
+#productImages h2
+{
+	text-align: center;
+	font-size: 24px;
+}
+
+/*Get rid of this, here just to give different height*/
+#productImages p
+{
+	line-height: 250px;
+}
+
+.productImg 
+{
+	width: 280px;
+}
+
+
+#contentAreaBig
+{
+	display: flex;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	flex-direction: row;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 0px;
+	background-color: #1d4036;
+}
+
+/*Get rid of this, here just to give different height*/
+#contentAreaBig p 
+{
+	line-height: normal;
+	text-align: left;
+	font-size: 30px;
+	padding-top: 80px;
+	padding-left: 30px;
+	padding-right: 50px;
+}
+
+#contentAreaBig img
+{
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 2px;
+}
+
+#promoImageBig
+{
+	width: 920px;
+}
+
+
+/*Page 4*/
+
+.productDescLargeLeft 
+{
+	width: 410px;
+}
+
+.productDescLargeRight 
+{
+	width: 410px;
+}
+
+

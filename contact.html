@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Web Page</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+<body>
+	<section id="topBar"></section><!--end topBar-->
+	<div id="siteContainer">
+    	<header id="mainHeader">
+        	<div id="logo"><img src="images/logo.jpg" alt="logo" width="250"></div><!--end logo-->
+            <nav id="mainNav">
+                <h2 class="hidden">Main Navigation</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="contentCon">
+        	<div id="content1">
+             <form id="contactForm" action="form.php" method="post">
+                    <label for="name"><h3>NAME:</h3></label>
+                    <input type="text" required id="name" name="fullName" size="30" placeholder="Enter your name">
+
+                    <label for="email"><h4>EMAIL:</h4></label>
+                    <input type="email" required id="email" size="30" placeholder="Enter your Email">
+
+                    <label for="comments"><h5>COMMENTS:</label>
+                    <textarea name="comments" id="comments" required cols="50" rows="8"></textarea>
+
+                    <input id="submit" type="submit" value="Submit">
+            </form>
+
+            </div><!--end content1-->
+        	<div id="content2"><img src="images/coffee_shop_9.jpg" alt="caramel frap" height="630" width="440"></div><!--end content2-->
+        </section><!--end contentCon-->
+        <footer id="mainFooter">
+            <div id="footerNav"><h2 class="hidden">Footer Navigation</h2>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+            <div id="copyRight">
+                <ul>
+                    <li id="adress">789 Mewburn Rd.ON</li>
+                    <li id="phone">905 536 2357</li>
+                    <li>O 2018 Covfefe Incorporated</li>
+                </ul>
+            </div><!--end Copyright-->
+        </footer><!--end mainFooter-->
+    </div><!--end siteContainer-->
+<script src="js/main.js"></script>    
+</body>
+</html>
